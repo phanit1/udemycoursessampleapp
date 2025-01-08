@@ -15,7 +15,7 @@ const App = () => {
         console.log('Base64 credentials:', base64Credentials);
         const fetchCourses = async () => {
             try {
-                const response = await axios.get('https://cors-anywhere.herokuapp.com/https://www.udemy.com/api-2.0/courses/', {
+                const response = await axios.get('https://www.udemy.com/api-2.0/courses/', {
                     // headers: {
                     //     Authorization: `Basic ${base64Credentials}`,
                     // }
