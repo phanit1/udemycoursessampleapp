@@ -22,7 +22,8 @@ const App = () => {
                     headers: {
                         "Accept": "application/json, text/plain, */*",
                         "Content-Type": "application/json",
-                        "Authorization": "Basic MUs1VGF3T1FHTXd1SXREWmZZWkY5QlpDc1NZSndNUFNnQmdWNGZmdTpBdHp4Y1NVTzRaU28yNGY4NG96RWJNZ2pDdFFSRXR3QWlJWUo5OENUN0Z6R2pGMllkdktRSGFaYmg1UUU3VHZxVlF5UkpnbDZGWXRydHZCODRFOURSWjkwQTdCbjduVW9aU3Z2V25naUp3OWVSVTA3d2dwMFdNWVNyV3pueEVSZg=="
+                        // "Authorization": "Basic MUs1VGF3T1FHTXd1SXREWmZZWkY5QlpDc1NZSndNUFNnQmdWNGZmdTpBdHp4Y1NVTzRaU28yNGY4NG96RWJNZ2pDdFFSRXR3QWlJWUo5OENUN0Z6R2pGMllkdktRSGFaYmg1UUU3VHZxVlF5UkpnbDZGWXRydHZCODRFOURSWjkwQTdCbjduVW9aU3Z2V25naUp3OWVSVTA3d2dwMFdNWVNyV3pueEVSZg=="
+                        "Authorization": `Basic ${base64Credentials}`
                       }
                 });
                 console.log('Courses:', response.data.results);
